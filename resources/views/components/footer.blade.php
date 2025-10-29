@@ -80,7 +80,7 @@
         </div>
 
         <div class="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/70">
-            <p>&copy; {{ date('Y') }} i-H1. Todos os direitos reservados.</p>
+            <p>&copy; {{ date('Y') }} i-H1. Todos os direitos reservados. Designed by <a href="https://skywingsdigital.com" target="_blank">Sky Wings Digital</a> </p>
         </div>
     </div>
 </footer>
