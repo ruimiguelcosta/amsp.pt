@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     @php
-        $appName = config('app.name', 'i-H1');
-        $appUrl = config('app.url', 'https://amsp.test');
+        $appName = 'i-H1';
+        $appUrl = config('app.url', 'https://amsp.pt');
         $description = 'Transforme sua casa em uma residência inteligente com tecnologia de ponta. Automação residencial, segurança, climatização e mais com tecnologia PoE (Power over Ethernet).';
         $ogImagePath = 'images/hero-smart-home.jpg';
         $fullOgImage = url($ogImagePath);
