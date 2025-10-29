@@ -2,7 +2,7 @@
     <div class="container mx-auto px-4">
         <div class="text-center mb-16 animate-fade-in">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
-                Por que Escolher <span class="bg-gradient-accent bg-clip-text text-transparent">SmartHome</span>?
+                Por que Escolher <span class="bg-gradient-accent bg-clip-text text-transparent">i-H1</span>?
             </h2>
             <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Benefícios que transformam sua qualidade de vida

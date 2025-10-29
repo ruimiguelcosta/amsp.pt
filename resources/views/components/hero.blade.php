@@ -16,37 +16,6 @@
                 Transforme sua residência em uma casa inteligente com tecnologia PoE (Power over Ethernet). 
                 Uma única infraestrutura para dados e energia. Conforto, segurança e eficiência máxima.
             </p>
-
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <button class="group bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg shadow-lg-custom rounded-lg transition-all duration-200 flex items-center">
-                    Explorar Soluções
-                    <svg class="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                    </svg>
-                </button>
-                
-                <button class="bg-primary-foreground/10 backdrop-blur-sm border border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 px-8 py-6 text-lg rounded-lg transition-all duration-200 flex items-center">
-                    <svg class="mr-2 w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M8 5v14l11-7z"/>
-                    </svg>
-                    Ver Demonstração
-                </button>
-            </div>
-
-            <div class="grid grid-cols-3 gap-8 mt-16 max-w-3xl mx-auto">
-                <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-bold text-primary mb-2">500+</div>
-                    <div class="text-primary-foreground/70">Casas Conectadas</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-bold text-secondary mb-2">95%</div>
-                    <div class="text-primary-foreground/70">Satisfação</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-4xl md:text-5xl font-bold text-accent mb-2">40%</div>
-                    <div class="text-primary-foreground/70">Economia Energia</div>
-                </div>
-            </div>
         </div>
     </div>
 

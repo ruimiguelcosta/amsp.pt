@@ -16,7 +16,7 @@
                     Seja Pioneiro em Tecnologia <span class="bg-gradient-primary bg-clip-text text-transparent">PoE</span>
                 </h2>
                 <p class="text-xl text-primary-foreground/90 max-w-2xl mx-auto">
-                    Cadastre-se agora e tenha acesso prioritário à revolução das casas inteligentes com Power over Ethernet. 
+                    Inscreva-se agora e tenha acesso prioritário à revolução das casas inteligentes com Power over Ethernet.
                     Uma única infraestrutura para dados e energia!
                 </p>
             </div>
@@ -73,7 +73,7 @@
 
             <div class="mt-12 text-center">
                 <p class="text-primary-foreground/70 text-lg">
-                    Vagas limitadas para instalação em <span class="font-bold text-primary">2025</span>
+                    Vagas limitadas para instalação em <span class="font-bold text-primary">2026</span>
                 </p>
             </div>
         </div>

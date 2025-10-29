@@ -3,12 +3,7 @@
         <div class="grid md:grid-cols-4 gap-8 mb-8">
             <div>
                 <div class="flex items-center space-x-2 mb-4">
-                    <div class="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                        </svg>
-                    </div>
-                    <span class="text-xl font-bold">SmartHome</span>
+                    <img src="{{ asset('images/logo-i-h1.jpeg') }}" alt="i-H1" class="h-10 w-auto">
                 </div>
                 <p class="text-primary-foreground/70">
                     Transformando residências em casas inteligentes com tecnologia de ponta.
@@ -57,7 +52,6 @@
                     <li>(+351) 926 289 876</li>
                     <li>(+351) 21 145 1873</li>
                     <li>geral@amsp.pt</li>
-                    <li><a href="https://amsp.pt" target="_blank" class="hover:text-primary transition-colors">https://amsp.pt</a></li>
                     <li>PORTUGAL</li>
                 </ul>
                 <div class="flex space-x-4 mt-4">
@@ -86,7 +80,7 @@
         </div>
 
         <div class="border-t border-primary-foreground/20 pt-8 text-center text-primary-foreground/70">
-            <p>&copy; {{ date('Y') }} SmartHome. Todos os direitos reservados.</p>
+            <p>&copy; {{ date('Y') }} i-H1. Todos os direitos reservados.</p>
         </div>
     </div>
 </footer>
