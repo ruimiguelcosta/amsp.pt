@@ -54,9 +54,11 @@
             <div>
                 <h3 class="font-semibold mb-4">Contacto</h3>
                 <ul class="space-y-2 text-primary-foreground/70">
-                    <li>+244 900 000 000</li>
-                    <li>info@smarthome.ao</li>
-                    <li>Luanda, Angola</li>
+                    <li>(+351) 926 289 876</li>
+                    <li>(+351) 21 145 1873</li>
+                    <li>geral@amsp.pt</li>
+                    <li><a href="https://amsp.pt" target="_blank" class="hover:text-primary transition-colors">https://amsp.pt</a></li>
+                    <li>PORTUGAL</li>
                 </ul>
                 <div class="flex space-x-4 mt-4">
                     <a href="#" class="hover:text-primary transition-colors">

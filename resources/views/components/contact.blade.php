@@ -25,7 +25,7 @@
 
                         <div>
                             <label class="block text-sm font-medium mb-2">Telefone</label>
-                            <input type="tel" placeholder="+244 900 000 000" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="tel" placeholder="(+351) 926 289 876" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                         </div>
 
                         <div>
@@ -57,8 +57,8 @@
                         </div>
                         <div>
                             <p class="font-semibold mb-1">Telefone</p>
-                            <p class="text-muted-foreground">+244 900 000 000</p>
-                            <p class="text-muted-foreground">+244 900 000 001</p>
+                            <p class="text-muted-foreground">(+351) 926 289 876</p>
+                            <p class="text-muted-foreground">(+351) 21 145 1873</p>
                         </div>
                     </div>
 
@@ -70,8 +70,7 @@
                         </div>
                         <div>
                             <p class="font-semibold mb-1">Email</p>
-                            <p class="text-muted-foreground">info@smarthome.ao</p>
-                            <p class="text-muted-foreground">suporte@smarthome.ao</p>
+                            <p class="text-muted-foreground">geral@amsp.pt</p>
                         </div>
                     </div>
 
@@ -84,8 +83,7 @@
                         </div>
                         <div>
                             <p class="font-semibold mb-1">Localização</p>
-                            <p class="text-muted-foreground">Rua Principal, Luanda</p>
-                            <p class="text-muted-foreground">Angola</p>
+                            <p class="text-muted-foreground">PORTUGAL</p>
                         </div>
                     </div>
                 </div>
