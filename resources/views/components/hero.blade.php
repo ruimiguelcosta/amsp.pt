@@ -1,6 +1,6 @@
 <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-    <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('{{ asset('images/hero-smart-home.jpg') }}')">
-        <div class="absolute inset-0 bg-gradient-dark opacity-90"></div>
+    <div class="absolute inset-0 bg-cover bg-center bg-no-repeat z-0" style="background-image: url('{{ asset('images/hero-smart-home.jpg') }}')">
+        <div class="absolute inset-0 bg-gradient-dark opacity-75"></div>
     </div>
 
     <div class="relative z-10 container mx-auto px-4 py-32">

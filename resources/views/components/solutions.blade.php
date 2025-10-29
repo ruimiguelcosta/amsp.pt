@@ -28,7 +28,7 @@
                 </div>
             </div>
 
-            <div class="group hover:shadow-lg-custom transition-all duration-300 hover:-translate-y-2 animate-fade-in border border-border rounded-lg overflow-hidden bg-card" style="animation-delay: 100ms">
+            <div id="security" class="group hover:shadow-lg-custom transition-all duration-300 hover:-translate-y-2 animate-fade-in border border-border rounded-lg overflow-hidden bg-card" style="animation-delay: 100ms">
                 <div class="h-48 overflow-hidden">
                     <img src="{{ asset('images/security-system.jpg') }}" alt="Segurança Avançada" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
                 </div>
