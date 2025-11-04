@@ -6,15 +6,29 @@
     <div class="relative z-10 container mx-auto px-4 py-32">
         <div class="max-w-4xl mx-auto text-center animate-fade-in-up">
             <h1 class="text-5xl md:text-7xl font-bold mb-6 text-primary-foreground leading-tight">
-                O Futuro da Sua Casa
+                Home AI
                 <span class="block bg-gradient-primary bg-clip-text text-transparent mt-2">
-                    Começa Hoje
+                    A inteligência que dá vida à sua casa
                 </span>
             </h1>
             
             <p class="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
-                Transforme sua residência em uma casa inteligente com tecnologia PoE (Power over Ethernet). 
-                Uma única infraestrutura para dados e energia. Conforto, segurança e eficiência máxima.
+                Transforme a sua casa num ambiente inteligente, autónomo e sustentável com a primeira 
+                IA doméstica local, que compreende, antecipa e age de forma proativa.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
+                <a href="#how-it-works" class="px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-medium transition-colors duration-200 text-lg smooth-scroll">
+                    Descubra como funciona
+                </a>
+                <a href="#contact" class="px-8 py-4 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border border-primary-foreground/30 rounded-lg font-medium transition-colors duration-200 text-lg smooth-scroll">
+                    Peça uma demonstração
+                </a>
+            </div>
+            
+            <p class="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
+                Tecnologia PoE (Power over Ethernet) - uma única infraestrutura para dados e energia. 
+                Processamento local, privacidade total e funcionamento sem depender da internet.
             </p>
         </div>
     </div>

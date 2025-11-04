@@ -14,22 +14,37 @@
                 <h3 class="font-semibold mb-4">Links Rápidos</h3>
                 <ul class="space-y-2">
                     <li>
-                        <a href="#home" class="text-primary-foreground/70 hover:text-primary transition-colors">
+                        <a href="#home" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
                             Início
                         </a>
                     </li>
                     <li>
-                        <a href="#solutions" class="text-primary-foreground/70 hover:text-primary transition-colors">
+                        <a href="#vision" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
+                            Visão
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#how-it-works" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
+                            Como Funciona
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#solutions" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
                             Soluções
                         </a>
                     </li>
                     <li>
-                        <a href="#security" class="text-primary-foreground/70 hover:text-primary transition-colors">
-                            Segurança
+                        <a href="#benefits" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
+                            Benefícios
                         </a>
                     </li>
                     <li>
-                        <a href="#contact" class="text-primary-foreground/70 hover:text-primary transition-colors">
+                        <a href="#privacy" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
+                            Privacidade
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="text-primary-foreground/70 hover:text-primary transition-colors smooth-scroll">
                             Contacto
                         </a>
                     </li>

@@ -1,11 +1,12 @@
-<section class="py-20 bg-background">
+<section id="benefits" class="py-20 bg-background">
     <div class="container mx-auto px-4">
         <div class="text-center mb-16 animate-fade-in">
             <h2 class="text-4xl md:text-5xl font-bold mb-4">
                 Por que Escolher <span class="bg-gradient-accent bg-clip-text text-transparent">i-H1</span>?
             </h2>
             <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Benefícios que transformam sua qualidade de vida
+                Benefícios que transformam a sua qualidade de vida, promovendo um modo de vida confortável, 
+                saudável, seguro e amigo do ambiente
             </p>
         </div>
 
@@ -79,6 +80,18 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-2">Instalação Simplificada</h3>
                     <p class="text-muted-foreground">Sistema modular com tecnologia PoE que elimina a necessidade de múltiplas instalações elétricas, adaptando-se a qualquer residência em até 48 horas.</p>
+                </div>
+            </div>
+
+            <div class="flex space-x-4 animate-fade-in-up p-6 rounded-lg hover:bg-muted/50 transition-colors" style="animation-delay: 600ms">
+                <div class="flex-shrink-0">
+                    <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-2">Saúde e Bem-estar</h3>
+                    <p class="text-muted-foreground">Monitorização de qualidade do ar e ruído, lembretes de sono, hidratação e atividade. Apoio a idosos e acessibilidade integrada.</p>
                 </div>
             </div>
         </div>
