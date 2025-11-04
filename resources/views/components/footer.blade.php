@@ -3,7 +3,7 @@
         <div class="grid md:grid-cols-4 gap-8 mb-8">
             <div>
                 <div class="flex items-center space-x-2 mb-4">
-                    <img src="{{ asset('images/logo-i-h1.jpeg') }}" alt="i-H1" class="h-10 w-auto">
+                    <img src="{{ asset('images/logo_transparente_brilho.png') }}" alt="i-H1" style="height: 140px;">
                 </div>
                 <p class="text-primary-foreground/70">
                     Transformando residências em casas inteligentes com tecnologia de ponta.

@@ -1,9 +1,9 @@
 <nav class="fixed top-0 left-0 right-0 z-50 bg-white border-b border-gray-200 shadow-sm">
     <div class="container mx-auto px-4">
-        <div class="flex items-center justify-between h-16">
+        <div class="flex items-center justify-between h-26">
             <div class="flex items-center space-x-2">
                 <a href="#home" class="flex items-center space-x-2">
-                    <img src="{{ asset('images/logo-i-h1.jpeg') }}" alt="i-H1" class="h-10 w-auto">
+                    <img src="{{ asset('images/ih1-amsp-en.png') }}" alt="i-H1" class="h-24 w-auto">
                 </a>
             </div>
 
