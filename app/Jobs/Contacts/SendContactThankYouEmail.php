@@ -6,18 +6,21 @@ use App\Domain\Contacts\Models\Contact;
 use App\Mail\Contacts\ContactThankYouMail;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Foundation\Queue\Queueable;
+use Illuminate\Queue\SerializesModels;
 use Illuminate\Support\Facades\Mail;
 
 class SendContactThankYouEmail implements ShouldQueue
 {
-    use Queueable;
+    use Queueable, SerializesModels;
 
     public function __construct(
-        public Contact $contact
+        public int $contactId
     ) {}
 
     public function handle(): void
     {
-        Mail::to($this->contact->email)->send(new ContactThankYouMail($this->contact));
+        $contact = Contact::query()->findOrFail($this->contactId);
+
+        Mail::to($contact->email)->send(new ContactThankYouMail($contact));
     }
 }

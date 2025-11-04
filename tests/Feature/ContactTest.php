@@ -71,9 +71,18 @@ class ContactTest extends TestCase
             'message' => 'Quero agendar uma demonstração.',
         ];
 
-        $this->postJson('/contact', $payload);
+        $response = $this->postJson('/contact', $payload);
 
-        Queue::assertPushed(\App\Jobs\Contacts\SendContactThankYouEmail::class);
-        Queue::assertPushed(\App\Jobs\Contacts\SendContactAdminNotification::class);
+        $response->assertStatus(201);
+
+        $contact = Contact::query()->where('email', 'maria@example.com')->first();
+
+        Queue::assertPushed(\App\Jobs\Contacts\SendContactThankYouEmail::class, function ($job) use ($contact) {
+            return $job->contactId === $contact->id;
+        });
+
+        Queue::assertPushed(\App\Jobs\Contacts\SendContactAdminNotification::class, function ($job) use ($contact) {
+            return $job->contactId === $contact->id;
+        });
     }
 }
