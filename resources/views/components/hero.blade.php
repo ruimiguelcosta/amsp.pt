@@ -12,24 +12,40 @@
                 </span>
             </h1>
             
-            <p class="text-xl md:text-2xl mb-8 text-primary-foreground/90 max-w-2xl mx-auto">
+            <p class="text-xl md:text-2xl mb-10 text-white max-w-3xl mx-auto leading-relaxed font-light drop-shadow-lg">
                 Transforme a sua casa num ambiente inteligente, autónomo e sustentável com a primeira 
-                IA doméstica local, que compreende, antecipa e age de forma proativa.
+                <span class="font-semibold text-white">IA doméstica local</span>, que compreende, antecipa e age de forma proativa.
             </p>
             
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <a href="#how-it-works" class="px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-medium transition-colors duration-200 text-lg smooth-scroll">
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="#how-it-works" class="px-8 py-4 bg-primary hover:bg-primary/90 text-white rounded-lg font-medium transition-all duration-200 text-lg smooth-scroll shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                     Descubra como funciona
                 </a>
-                <a href="#contact" class="px-8 py-4 bg-primary-foreground/10 hover:bg-primary-foreground/20 text-primary-foreground border border-primary-foreground/30 rounded-lg font-medium transition-colors duration-200 text-lg smooth-scroll">
+                <a href="#contact" class="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 rounded-lg font-medium transition-all duration-200 text-lg smooth-scroll shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
                     Peça uma demonstração
                 </a>
             </div>
             
-            <p class="text-lg md:text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-                Tecnologia PoE (Power over Ethernet) - uma única infraestrutura para dados e energia. 
-                Processamento local, privacidade total e funcionamento sem depender da internet.
-            </p>
+            <div class="max-w-3xl mx-auto">
+                <div class="bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-6 md:p-8 shadow-2xl">
+                    <div class="flex items-start gap-4">
+                        <div class="flex-shrink-0 mt-1">
+                            <div class="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center backdrop-blur-sm">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="flex-1">
+                            <h3 class="text-white font-semibold text-lg mb-2">Tecnologia PoE (Power over Ethernet)</h3>
+                            <p class="text-white/95 text-base md:text-lg leading-relaxed">
+                                Uma única infraestrutura para dados e energia. <span class="font-medium">Processamento local</span>, 
+                                <span class="font-medium">privacidade total</span> e funcionamento sem depender da internet.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
