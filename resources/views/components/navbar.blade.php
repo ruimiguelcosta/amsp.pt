@@ -3,7 +3,7 @@
         <div class="flex items-center justify-between h-26">
             <div class="flex items-center space-x-2">
                 <a href="#home" class="flex items-center space-x-2">
-                    <img src="{{ asset('images/ih1-amsp-en.png') }}" alt="i-H1" class="h-24 w-auto">
+                    <img src="{{ asset('images/logo_amsp_horizontal.png') }}" alt="i-H1" class="h-24 w-auto">
                 </a>
             </div>
 
