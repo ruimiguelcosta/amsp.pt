@@ -12,32 +12,94 @@
         <div class="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div class="border border-border rounded-lg animate-fade-in-up bg-card">
                 <div class="p-8">
-                    <form class="space-y-6">
+                    <form id="contact-form" method="POST" action="{{ route('contact.store') }}" class="space-y-6">
+                        @csrf
+                        
+                        <div id="form-message" class="hidden mb-4 p-4 rounded-lg"></div>
+                        
                         <div>
                             <label class="block text-sm font-medium mb-2">Nome Completo</label>
-                            <input type="text" placeholder="Seu nome" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="text" name="name" placeholder="Seu nome" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                         </div>
 
                         <div>
                             <label class="block text-sm font-medium mb-2">Email</label>
-                            <input type="email" placeholder="seu@email.com" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="email" name="email" placeholder="seu@email.com" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                         </div>
 
                         <div>
                             <label class="block text-sm font-medium mb-2">Telefone</label>
-                            <input type="tel" placeholder="(+351) 926 289 876" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <input type="tel" name="phone" placeholder="(+351) 926 289 876" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
                         </div>
 
                         <div>
                             <label class="block text-sm font-medium mb-2">Mensagem</label>
-                            <textarea placeholder="Como podemos ajudar?" rows="4" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"></textarea>
+                            <textarea name="message" placeholder="Como podemos ajudar?" rows="4" required class="w-full px-4 py-3 border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary resize-none"></textarea>
                         </div>
 
-                        <button type="submit" class="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-medium transition-colors duration-200">
-                            Enviar Mensagem
+                        <button type="submit" id="submit-btn" class="w-full px-6 py-3 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg font-medium transition-colors duration-200">
+                            <span id="submit-text">Enviar Mensagem</span>
+                            <span id="submit-loading" class="hidden">A enviar...</span>
                         </button>
                     </form>
                 </div>
+                
+                <script>
+                    document.getElementById('contact-form').addEventListener('submit', async function(e) {
+                        e.preventDefault();
+                        
+                        const form = e.target;
+                        const submitBtn = document.getElementById('submit-btn');
+                        const submitText = document.getElementById('submit-text');
+                        const submitLoading = document.getElementById('submit-loading');
+                        const messageDiv = document.getElementById('form-message');
+                        
+                        submitBtn.disabled = true;
+                        submitText.classList.add('hidden');
+                        submitLoading.classList.remove('hidden');
+                        messageDiv.classList.add('hidden');
+                        
+                        const formData = new FormData(form);
+                        
+                        try {
+                            const response = await fetch(form.action, {
+                                method: 'POST',
+                                body: formData,
+                                headers: {
+                                    'X-Requested-With': 'XMLHttpRequest',
+                                    'Accept': 'application/json',
+                                }
+                            });
+                            
+                            const data = await response.json();
+                            
+                            if (response.ok) {
+                                messageDiv.className = 'mb-4 p-4 rounded-lg bg-green-100 text-green-800 border border-green-300';
+                                messageDiv.textContent = data.message || 'Mensagem enviada com sucesso!';
+                                messageDiv.classList.remove('hidden');
+                                form.reset();
+                            } else {
+                                let errorMessage = 'Ocorreu um erro ao enviar a mensagem.';
+                                if (data.errors) {
+                                    errorMessage = Object.values(data.errors).flat().join(' ');
+                                } else if (data.message) {
+                                    errorMessage = data.message;
+                                }
+                                messageDiv.className = 'mb-4 p-4 rounded-lg bg-red-100 text-red-800 border border-red-300';
+                                messageDiv.textContent = errorMessage;
+                                messageDiv.classList.remove('hidden');
+                            }
+                        } catch (error) {
+                            messageDiv.className = 'mb-4 p-4 rounded-lg bg-red-100 text-red-800 border border-red-300';
+                            messageDiv.textContent = 'Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.';
+                            messageDiv.classList.remove('hidden');
+                        } finally {
+                            submitBtn.disabled = false;
+                            submitText.classList.remove('hidden');
+                            submitLoading.classList.add('hidden');
+                        }
+                    });
+                </script>
             </div>
 
             <div class="space-y-8 animate-fade-in-up" style="animation-delay: 200ms">
