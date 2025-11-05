@@ -40,6 +40,13 @@
     <meta name="twitter:image" content="{{ $fullOgImage }}" />
     <meta name="twitter:image:alt" content="Casa inteligente com tecnologia PoE" />
 
+    <link rel="icon" type="image/png" href="{{ url('images/favicon') }}/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="{{ url('images/favicon') }}/favicon.svg" />
+    <link rel="shortcut icon" href="{{ url('images/favicon') }}/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ url('images/favicon') }}/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="i-H1" />
+    <link rel="manifest" href="{{ url('images/favicon') }}/site.webmanifest" />
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     <script type="application/ld+json">
