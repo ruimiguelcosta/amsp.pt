@@ -215,6 +215,7 @@ return [
     'environments' => [
         'production' => [
             'supervisor-1' => [
+                'queue' => ['send-email'],
                 'maxProcesses' => 10,
                 'balanceMaxShift' => 1,
                 'balanceCooldown' => 3,
