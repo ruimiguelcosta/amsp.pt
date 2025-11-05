@@ -21,6 +21,6 @@ class SendContactAdminNotification implements ShouldQueue
     {
         $contact = Contact::query()->findOrFail($this->contactId);
 
-        Mail::to('rui.costa@inovador.net')->send(new ContactAdminNotificationMail($contact));
+        Mail::to('geral@amsp.pt')->send(new ContactAdminNotificationMail($contact));
     }
 }
