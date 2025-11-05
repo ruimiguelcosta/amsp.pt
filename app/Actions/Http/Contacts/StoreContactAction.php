@@ -20,9 +20,13 @@ class StoreContactAction
         $data = ContactData::from($request->validated());
         $contact = $this->service->store($data);
 
-        SendContactThankYouEmail::dispatch($contact->id)->onQueue('send-email');
+        SendContactThankYouEmail::dispatch($contact->id)
+            ->onConnection('redis')
+            ->onQueue('send-email');
 
-        SendContactAdminNotification::dispatch($contact->id)->onQueue('send-email');
+        SendContactAdminNotification::dispatch($contact->id)
+            ->onConnection('redis')
+            ->onQueue('send-email');
 
         return response()->json([
             'message' => 'Mensagem enviada com sucesso. Entraremos em contacto em breve.',
