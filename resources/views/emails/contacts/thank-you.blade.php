@@ -5,113 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Obrigado pelo seu contacto - AMSP</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
             background-color: #f5f5f5;
             line-height: 1.6;
+            color: #333333;
+            -webkit-font-smoothing: antialiased;
         }
-        .email-container {
+        .email-wrapper {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 40px auto;
             background-color: #ffffff;
         }
-        .email-header {
-            background: linear-gradient(135deg, hsl(199 89% 48%), hsl(188 94% 57%));
-            padding: 40px 20px;
+        .header {
+            padding: 48px 32px 32px;
             text-align: center;
+            border-bottom: 1px solid #e5e5e5;
         }
-        .email-header img {
-            max-width: 200px;
+        .logo {
+            max-width: 160px;
             height: auto;
+            margin-bottom: 24px;
         }
-        .email-content {
-            padding: 40px 30px;
-            color: #333333;
+        .content {
+            padding: 48px 32px;
         }
-        .email-content h1 {
-            color: hsl(199 89% 48%);
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 20px;
+        .greeting {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 24px;
+            line-height: 1.3;
         }
-        .email-content p {
-            color: #666666;
+        .text {
             font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .email-footer {
-            background-color: #f8f9fa;
-            padding: 30px;
-            text-align: center;
-            border-top: 2px solid hsl(199 89% 48% / 0.1);
-        }
-        .email-footer p {
             color: #666666;
-            font-size: 14px;
-            margin: 5px 0;
+            margin-bottom: 20px;
+            line-height: 1.6;
         }
-        .email-footer a {
-            color: hsl(199 89% 48%);
+        .text strong {
+            color: #1a1a1a;
+            font-weight: 600;
+        }
+        .divider {
+            height: 1px;
+            background-color: #e5e5e5;
+            margin: 32px 0;
+        }
+        .info-box {
+            background-color: #f8f9fa;
+            padding: 24px;
+            border-radius: 8px;
+            margin-top: 32px;
+        }
+        .info-item {
+            font-size: 15px;
+            color: #333333;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+        .info-label {
+            color: #0ea5e9;
+            font-weight: 600;
+            display: inline-block;
+            min-width: 80px;
+        }
+        .footer {
+            padding: 32px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e5e5e5;
+        }
+        .footer-text {
+            font-size: 14px;
+            color: #666666;
+            margin-bottom: 8px;
+        }
+        .footer-link {
+            color: #0ea5e9;
             text-decoration: none;
         }
-        .highlight-box {
-            background: linear-gradient(135deg, hsl(199 89% 48% / 0.1), hsl(188 94% 57% / 0.1));
-            border-left: 4px solid hsl(199 89% 48%);
-            padding: 20px;
-            margin: 30px 0;
-            border-radius: 4px;
+        .footer-link:hover {
+            text-decoration: underline;
         }
-        .contact-info {
-            background-color: #f8f9fa;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
+        .footer-small {
+            font-size: 12px;
+            color: #999999;
+            margin-top: 24px;
         }
-        .contact-info p {
-            margin: 8px 0;
-            color: #333333;
-        }
-        .contact-info strong {
-            color: hsl(199 89% 48%);
+        @media only screen and (max-width: 600px) {
+            .email-wrapper {
+                margin: 0;
+                width: 100%;
+            }
+            .header, .content, .footer {
+                padding: 32px 24px;
+            }
+            .greeting {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="email-container">
-        <div class="email-header">
-            <img src="{{ asset('images/logo_amsp_horizontal.png') }}" alt="AMSP Logo">
+    <div class="email-wrapper">
+        <div class="header">
+            <img src="{{ asset('images/logo_amsp_horizontal.png') }}" alt="AMSP" class="logo">
         </div>
         
-        <div class="email-content">
-            <h1>Obrigado pelo seu contacto!</h1>
+        <div class="content">
+            <h1 class="greeting">Obrigado pelo seu contacto</h1>
             
-            <p>Caro/a <strong>{{ $contact->name }}</strong>,</p>
+            <p class="text">Caro/a <strong>{{ $contact->name }}</strong>,</p>
             
-            <p>Recebemos a sua mensagem e agradecemos o seu interesse na AMSP. A nossa equipa irá analisar o seu contacto e responder-lhe-á o mais brevemente possível.</p>
+            <p class="text">Recebemos a sua mensagem e agradecemos o seu interesse na AMSP. A nossa equipa irá analisar o seu contacto e responder-lhe-á o mais brevemente possível.</p>
             
-            <div class="highlight-box">
-                <p style="margin: 0; color: #333333;"><strong>O que acontece a seguir?</strong></p>
-                <p style="margin: 10px 0 0 0; color: #666666;">A nossa equipa irá contactá-lo/a nos próximos dias úteis para discutir as suas necessidades e como podemos ajudá-lo/a a transformar a sua casa com tecnologia PoE.</p>
-            </div>
+            <div class="divider"></div>
             
-            <div class="contact-info">
-                <p><strong>Resumo do seu contacto:</strong></p>
-                <p><strong>Nome:</strong> {{ $contact->name }}</p>
-                <p><strong>Email:</strong> {{ $contact->email }}</p>
-                <p><strong>Telefone:</strong> {{ $contact->phone }}</p>
-                <p><strong>Mensagem:</strong><br>{{ $contact->message }}</p>
+            <p class="text" style="margin-bottom: 0;">A nossa equipa irá contactá-lo/a nos próximos dias úteis para discutir as suas necessidades e como podemos ajudá-lo/a a transformar a sua casa com tecnologia PoE.</p>
+            
+            <div class="info-box">
+                <div class="info-item">
+                    <span class="info-label">Nome:</span>{{ $contact->name }}
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Email:</span>{{ $contact->email }}
+                </div>
+                <div class="info-item">
+                    <span class="info-label">Telefone:</span>{{ $contact->phone }}
+                </div>
+                <div class="info-item" style="margin-top: 16px;">
+                    <div style="margin-bottom: 4px;"><span class="info-label">Mensagem:</span></div>
+                    <div style="color: #666666; margin-left: 0;">{{ $contact->message }}</div>
+                </div>
             </div>
         </div>
         
-        <div class="email-footer">
-            <p><strong>AMSP - Automação e Gestão Inteligente</strong></p>
-            <p>Email: <a href="mailto:geral@amsp.pt">geral@amsp.pt</a></p>
-            <p>Telefone: (+351) 926 289 876 | (+351) 21 145 1873</p>
-            <p style="margin-top: 20px; font-size: 12px; color: #999999;">
-                Este é um email automático. Por favor, não responda diretamente a este email.
+        <div class="footer">
+            <p class="footer-text"><strong>AMSP</strong></p>
+            <p class="footer-text">
+                <a href="mailto:geral@amsp.pt" class="footer-link">geral@amsp.pt</a>
             </p>
+            <p class="footer-text">(+351) 926 289 876 | (+351) 21 145 1873</p>
+            <p class="footer-small">Este é um email automático. Por favor, não responda diretamente a este email.</p>
         </div>
     </div>
 </body>

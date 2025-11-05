@@ -5,141 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Novo contacto recebido - AMSP</title>
     <style>
-        body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+        body {
             font-family: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
             background-color: #f5f5f5;
             line-height: 1.6;
+            color: #333333;
+            -webkit-font-smoothing: antialiased;
         }
-        .email-container {
+        .email-wrapper {
             max-width: 600px;
-            margin: 0 auto;
+            margin: 40px auto;
             background-color: #ffffff;
         }
-        .email-header {
-            background: linear-gradient(135deg, hsl(199 89% 48%), hsl(188 94% 57%));
-            padding: 40px 20px;
+        .header {
+            padding: 48px 32px 32px;
             text-align: center;
+            border-bottom: 1px solid #e5e5e5;
         }
-        .email-header img {
-            max-width: 200px;
+        .logo {
+            max-width: 160px;
             height: auto;
+            margin-bottom: 24px;
         }
-        .email-content {
-            padding: 40px 30px;
-            color: #333333;
+        .content {
+            padding: 48px 32px;
         }
-        .email-content h1 {
-            color: hsl(199 89% 48%);
-            font-size: 28px;
-            margin-top: 0;
-            margin-bottom: 20px;
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 16px;
+            line-height: 1.3;
         }
-        .email-content p {
-            color: #666666;
-            font-size: 16px;
-            margin-bottom: 20px;
-        }
-        .email-footer {
+        .alert {
+            font-size: 15px;
+            color: #1a1a1a;
+            margin-bottom: 32px;
+            padding: 16px;
             background-color: #f8f9fa;
-            padding: 30px;
-            text-align: center;
-            border-top: 2px solid hsl(199 89% 48% / 0.1);
-        }
-        .email-footer p {
-            color: #666666;
-            font-size: 14px;
-            margin: 5px 0;
-        }
-        .alert-box {
-            background: linear-gradient(135deg, hsl(142 76% 36% / 0.1), hsl(199 89% 48% / 0.1));
-            border-left: 4px solid hsl(142 76% 36%);
-            padding: 20px;
-            margin: 30px 0;
+            border-left: 3px solid #0ea5e9;
             border-radius: 4px;
         }
-        .contact-details {
-            background-color: #f8f9fa;
-            padding: 25px;
-            border-radius: 8px;
-            margin-top: 30px;
-            border: 1px solid hsl(199 89% 48% / 0.2);
-        }
-        .contact-details h2 {
-            color: hsl(199 89% 48%);
-            font-size: 20px;
-            margin-top: 0;
+        .text {
+            font-size: 16px;
+            color: #666666;
             margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid hsl(199 89% 48% / 0.2);
+            line-height: 1.6;
         }
-        .contact-details p {
-            margin: 12px 0;
+        .divider {
+            height: 1px;
+            background-color: #e5e5e5;
+            margin: 32px 0;
+        }
+        .details-box {
+            background-color: #f8f9fa;
+            padding: 24px;
+            border-radius: 8px;
+            margin-top: 32px;
+        }
+        .detail-item {
+            font-size: 15px;
             color: #333333;
+            margin-bottom: 16px;
+            line-height: 1.6;
         }
-        .contact-details strong {
-            color: hsl(199 89% 48%);
+        .detail-item:last-child {
+            margin-bottom: 0;
+        }
+        .detail-label {
+            color: #0ea5e9;
+            font-weight: 600;
             display: inline-block;
-            min-width: 120px;
+            min-width: 100px;
+        }
+        .detail-link {
+            color: #0ea5e9;
+            text-decoration: none;
+        }
+        .detail-link:hover {
+            text-decoration: underline;
         }
         .message-box {
             background-color: #ffffff;
-            border: 1px solid #e0e0e0;
-            padding: 15px;
+            padding: 16px;
             border-radius: 4px;
-            margin-top: 15px;
+            margin-top: 12px;
             color: #333333;
             white-space: pre-wrap;
+            line-height: 1.6;
+            border: 1px solid #e5e5e5;
         }
-        .timestamp {
-            color: #999999;
+        .meta {
+            margin-top: 24px;
+            padding-top: 24px;
+            border-top: 1px solid #e5e5e5;
             font-size: 14px;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid #e0e0e0;
+            color: #666666;
+        }
+        .meta-item {
+            margin-bottom: 8px;
+        }
+        .meta-item:last-child {
+            margin-bottom: 0;
+        }
+        .footer {
+            padding: 32px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e5e5e5;
+        }
+        .footer-text {
+            font-size: 14px;
+            color: #666666;
+        }
+        @media only screen and (max-width: 600px) {
+            .email-wrapper {
+                margin: 0;
+                width: 100%;
+            }
+            .header, .content, .footer {
+                padding: 32px 24px;
+            }
+            .title {
+                font-size: 20px;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="email-container">
-        <div class="email-header">
-            <img src="{{ asset('images/logo_amsp_horizontal.png') }}" alt="AMSP Logo">
+    <div class="email-wrapper">
+        <div class="header">
+            <img src="{{ asset('images/logo_amsp_horizontal.png') }}" alt="AMSP" class="logo">
         </div>
         
-        <div class="email-content">
-            <h1>Novo contacto recebido</h1>
+        <div class="content">
+            <h1 class="title">Novo contacto recebido</h1>
             
-            <div class="alert-box">
-                <p style="margin: 0; color: #333333;"><strong>⚠️ Ação necessária:</strong> Um novo contacto foi submetido através do formulário do website.</p>
+            <div class="alert">
+                Um novo contacto foi submetido através do formulário do website.
             </div>
             
-            <div class="contact-details">
-                <h2>Detalhes do Contacto</h2>
+            <div class="details-box">
+                <div class="detail-item">
+                    <span class="detail-label">Nome:</span>{{ $contact->name }}
+                </div>
                 
-                <p><strong>Nome:</strong> {{ $contact->name }}</p>
+                <div class="detail-item">
+                    <span class="detail-label">Email:</span>
+                    <a href="mailto:{{ $contact->email }}" class="detail-link">{{ $contact->email }}</a>
+                </div>
                 
-                <p><strong>Email:</strong> <a href="mailto:{{ $contact->email }}" style="color: hsl(199 89% 48%); text-decoration: none;">{{ $contact->email }}</a></p>
+                <div class="detail-item">
+                    <span class="detail-label">Telefone:</span>
+                    <a href="tel:{{ $contact->phone }}" class="detail-link">{{ $contact->phone }}</a>
+                </div>
                 
-                <p><strong>Telefone:</strong> <a href="tel:{{ $contact->phone }}" style="color: hsl(199 89% 48%); text-decoration: none;">{{ $contact->phone }}</a></p>
+                <div class="detail-item" style="margin-top: 20px;">
+                    <div style="margin-bottom: 8px;"><span class="detail-label">Mensagem:</span></div>
+                    <div class="message-box">{{ $contact->message }}</div>
+                </div>
                 
-                <p><strong>Mensagem:</strong></p>
-                <div class="message-box">{{ $contact->message }}</div>
-                
-                <div class="timestamp">
-                    <p style="margin: 0;"><strong>Data:</strong> {{ $contact->created_at->format('d/m/Y H:i:s') }}</p>
-                    <p style="margin: 5px 0 0 0;"><strong>ID do contacto:</strong> #{{ $contact->id }}</p>
+                <div class="meta">
+                    <div class="meta-item"><strong>Data:</strong> {{ $contact->created_at->format('d/m/Y H:i:s') }}</div>
+                    <div class="meta-item"><strong>ID:</strong> #{{ $contact->id }}</div>
                 </div>
             </div>
             
-            <p style="margin-top: 30px; color: #666666;">
-                Por favor, entre em contacto com o cliente o mais brevemente possível para agendar uma demonstração ou responder às suas questões.
-            </p>
+            <div class="divider"></div>
+            
+            <p class="text" style="margin-bottom: 0;">Por favor, entre em contacto com o cliente o mais brevemente possível para agendar uma demonstração ou responder às suas questões.</p>
         </div>
         
-        <div class="email-footer">
-            <p><strong>AMSP - Automação e Gestão Inteligente</strong></p>
-            <p>Este é um email automático do sistema de gestão de contactos.</p>
+        <div class="footer">
+            <p class="footer-text"><strong>AMSP</strong> - Sistema de gestão de contactos</p>
         </div>
     </div>
 </body>
