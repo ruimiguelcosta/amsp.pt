@@ -21,6 +21,7 @@ class StoreContactAction
         $contact = $this->service->store($data);
 
         SendContactThankYouEmail::dispatch($contact->id)->onQueue('send-email');
+
         SendContactAdminNotification::dispatch($contact->id)->onQueue('send-email');
 
         return response()->json([

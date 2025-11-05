@@ -13,6 +13,8 @@ class SendContactAdminNotification implements ShouldQueue
 {
     use Queueable, SerializesModels;
 
+    public string $connection = 'redis';
+
     public function __construct(
         public int $contactId
     ) {}
