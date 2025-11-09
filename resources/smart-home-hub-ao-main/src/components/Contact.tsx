@@ -32,7 +32,7 @@ const Contact = () => {
             Entre em <span className="bg-gradient-accent bg-clip-text text-transparent">Contacto</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Agende uma demonstração gratuita e descubra como podemos transformar sua casa
+            Peça mais informações sobre como podemos transformar sua casa
           </p>
         </div>
 

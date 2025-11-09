@@ -40,7 +40,7 @@ const Hero = () => {
               className="bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/20 px-8 py-6 text-lg"
             >
               <Play className="mr-2 w-5 h-5" />
-              Ver Demonstração
+              Mais Informações
             </Button>
           </div>
 

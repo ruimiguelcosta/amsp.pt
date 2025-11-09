@@ -22,7 +22,7 @@
                     Descubra como funciona
                 </a>
                 <a href="#contact" class="px-8 py-4 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white border-2 border-white/30 rounded-lg font-medium transition-all duration-200 text-lg smooth-scroll shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
-                    Peça uma demonstração
+                    Mais Informações
                 </a>
             </div>
             

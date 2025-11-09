@@ -37,7 +37,7 @@ const Navbar = () => {
               </a>
             ))}
             <Button variant="default" size="sm">
-              Agendar Demonstração
+              Mais Informações
             </Button>
           </div>
 
@@ -66,7 +66,7 @@ const Navbar = () => {
                 </a>
               ))}
               <Button variant="default" className="w-full">
-                Agendar Demonstração
+                Mais Informações
               </Button>
             </div>
           </div>

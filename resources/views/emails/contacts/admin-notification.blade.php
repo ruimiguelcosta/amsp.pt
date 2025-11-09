@@ -178,7 +178,7 @@
             
             <div class="divider"></div>
             
-            <p class="text" style="margin-bottom: 0;">Por favor, entre em contacto com o cliente o mais brevemente possível para agendar uma demonstração ou responder às suas questões.</p>
+            <p class="text" style="margin-bottom: 0;">Por favor, entre em contacto com o cliente o mais brevemente possível para fornecer mais informações ou responder às suas questões.</p>
         </div>
         
         <div class="footer">

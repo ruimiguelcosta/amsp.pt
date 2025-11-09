@@ -22,3 +22,5 @@ class Contact extends Model
         return ContactFactory::new();
     }
 }
+
+

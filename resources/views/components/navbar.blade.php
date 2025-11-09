@@ -30,7 +30,7 @@
                     Contacto
                 </a>
                 <a href="#contact" class="px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg transition-colors duration-200 font-medium smooth-scroll">
-                    Agendar Demonstração
+                    Mais Informações
                 </a>
             </div>
 
@@ -90,7 +90,7 @@
                     <span>Contacto</span>
                 </a>
                 <a href="#contact" class="w-full px-4 py-2 bg-primary hover:bg-primary/90 text-primary-foreground rounded-lg transition-colors duration-200 font-medium text-center smooth-scroll" onclick="toggleMobileMenu()">
-                    Agendar Demonstração
+                    Mais Informações
                 </a>
             </div>
         </div>

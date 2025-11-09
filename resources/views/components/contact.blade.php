@@ -5,7 +5,7 @@
                 Entre em <span class="bg-gradient-accent bg-clip-text text-transparent">Contacto</span>
             </h2>
             <p class="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Agende uma demonstração gratuita e descubra como podemos transformar sua casa
+                Mais Informações sobre como podemos transformar sua casa
             </p>
         </div>
 

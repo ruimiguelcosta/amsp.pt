@@ -68,7 +68,7 @@ class ContactTest extends TestCase
             'name' => 'Maria Santos',
             'email' => 'maria@example.com',
             'phone' => '+351 21 145 1873',
-            'message' => 'Quero agendar uma demonstração.',
+            'message' => 'Quero mais informações.',
         ];
 
         $response = $this->postJson('/contact', $payload);
