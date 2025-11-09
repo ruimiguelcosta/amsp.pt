@@ -145,6 +145,9 @@
                         </div>
                         <div>
                             <p class="font-semibold mb-1">Localização</p>
+                            <p class="text-muted-foreground">Mafra Business Factory</p>
+                            <p class="text-muted-foreground">Av. Primeiro de Maio, 1</p>
+                            <p class="text-muted-foreground">2640-455 MAFRA</p>
                             <p class="text-muted-foreground">PORTUGAL</p>
                         </div>
                     </div>
