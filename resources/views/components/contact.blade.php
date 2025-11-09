@@ -106,7 +106,7 @@
                 <div>
                     <h3 class="text-2xl font-bold mb-6">Informações de Contacto</h3>
                     <p class="text-muted-foreground mb-8">
-                        Nossa equipe está pronta para atendê-lo e responder todas as suas dúvidas sobre automação residencial.
+                        Nossa equipa está pronta para atendê-lo e responder todas as suas dúvidas sobre automação residencial.
                     </p>
                 </div>
 
